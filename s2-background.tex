@@ -1,0 +1,115 @@
+%\vspace{-0.1in}
+\section{Background and Related Work}
+\label{s:background}
+ 
+
+
+% Evolving resilience
+% Because it covers a large search space, 
+% Evolution is very effective at finding solutions
+% beyond preconcptions and therefore 
+% bongard, etc.
+% -> conclusion?
+
+
+% sensor placement.
+% An importan aspect of resilence is sensing capabiltiy
+% Sensor placement is a big issue in robotics
+
+% -> here we exploit that capabilty in placing (sonar)
+% sensors on a model of a commercial robot.
+
+\xpkm{PARA 1 (maybe 1\&2): Introduce ER.  Mention/cite works relate to resiliency.  Needs to be 
+edited/augmented, as well as smoothed out.}
+% Evolutionary robotics (ER)~\cite{Floreano2008} applies principles of biological evolution to the design of robotic systems. 
+%
+% Individual candidate solutions are evaluated with respect to one or more tasks.  
+%
+% Evolutionary approaches have produced controllers and physical designs for aquatic, terrestrial, and aerial robots~\cite{bongard-lipson,Lipson2000}.  
+%
+As with natural evolution, results of many ER studies exhibit a tight coupling between
+aspects of morphology, such as sensor positioning, and the controller~\cite{Bongard2015}.
+Moreover, the resilience of natural organisms has led researchers to 
+apply evolutionary search in order to enhance engineered systems.
+Bongard~et~al.~\cite{bongard-lipson} demonstrated the potential of evolution
+in {\em self-modeling} terrestrial robots, where the system maintains an internal
+``mental image'' of itself and can evolve compensatory behaviors to mitigate damage;
+their estimation-exploration algorithm has also been applied to aquatic robots~\cite{Rose.SelfModeling.ERLARS.2013}.
+% Model organisms have provided inspiration for aquatic robots~\cite{Clark.ALIFE.2012}, where the flexibility of fins improved performance in a robotic fish.  
+% \pkm{Probably mention/cite others.  Maybe our swimming paper?}
+Cully~et~al.~\cite{Cully2014} improved and extended this general approach to
+enable robots to adapt locomotion strategies in real time, based on sensory feedback.
+%
+
+
+% \paragraph{ER Simulation.}
+Despite impressive results from the ER community, however, there remains a disconnect with
+the mainstream robotics community, which has also seen major advances in recent years.
+\xpkm{cite examples?}
+As noted above, ER 
+%Simulation is essential to both fields, 
+%significantly decreasing the time to 
+%evaluate candidate solutions and avoiding damage to a physical platform.
+%Within the ER community, 
+simulations are typically developed in-house and are simple relative to commercial robots.
+% built with tools such as the Open Dynamics Engine~(ODE)~\cite{ODE} and 
+% configured per experiment with relatively sparse environments.  
+%
+% Hence, ER tasks are often limited by the scope of the simulation environment and how much time a developer has to code obstacles, sensors, and the platform itself.  
+%
+% Moreover, models are not necessarily shareable between developers due to a lack of standardization.  
+% 
+Silva~et~al.~\cite{Silva.ERissues.2016} recently pointed out these shortcomings and suggested 
+possible advantages of adopting tools from mainstream robotics for ER simulations.
+In particular, ROS and Gazebo
+provide tested models of commercially available actuators and sensors,
+saving the ER researcher time in constructing target platforms for evolutionary runs.
+Additionally, results have been shown to transfer to real robots, helping
+to address the ``reality-gap'' often encountered in ER~\cite{Koos2010}.  
+The primary drawback of using high-fidelity simulation in an evolutionary algorithm
+is the overhead needed for evaluations.
+Our view is that this issue can be partially addressed through 
+relatively small-scale parallelization and can eventually be marginalized
+with continuing advances in processing capability and larger-scale parallelization.
+
+% \paragraph{Mitigating Sensor Failure}
+% \pkm{the GECCO reviewers mentioned other sensor placement studies which we can cite here}
+We have realized this approach with the Evo-ROS platform. \xpkm{do we cite the github repository?} \xajc{I suggest we add a placeholder footnote that will eventually link to the github repository but currently is just a comment that the link has been removed to preserve anonymity.}
+The particular problem we address in the subsequent case study is optimal placement of sonar sensors
+while accounting for possible failures. 
+Although these issues are of considerable interest to both the ER and mainstream robotics communities~\cite{Balakrishnan1996,Wang2004,Duckworth.2013.SSRR.Backward}, most studies have focused on fault tolerance and not on sensor placement~\cite{Zhang.2008.FaultTolerance}.
+\xpkm{These are pretty old references.  Must be some newer ones from the robotics world.}
+% Tony/Jared, can you look for references in this area? See more comments below.}
+Evolutionary algorithms are particularly well suited 
+to such problems, as they can search large solution spaces, unbiased
+by human preconception.
+Moreover, evolution can discover ``unlikely-but-possible'' situations that 
+might otherwise result in system failure.
+\xajc{We should give an example of unlikely-but-possible.}
+
+\xpkm{Any additional transition needed?  Preview results?  Or just leave it and move on to the
+details of evoros.}
+
+\xpkm{Should we also comment on any work applying evolution to sensor placement.  
+A google search of (robot sensor placement evolution) gives results like these, which I have
+not read yet: 
+A co-evolution approach to sensor placement and control design for robot obstacle avoidance\\
+Evolution of Sensor Placement in Simple Virtual Robots\\
+Evolution of Engineering and Information Systems and Their Applications\\
+but I suspect placement in the presence of failures is relative open in the ER community, 
+though probably better covered in mainstream robotics.}
+
+\xjmm{I added one mainstream and one ER reference in the last paragraph.  Many of the articles I found were on related, but not related enough areas like deploying external sensors in the environment, not on the robot itself.  Perhaps I'm looking under the wrong terms?}
+
+% \pkm{Part 1. Basic flow might follow the ROSCON abstract, to wit:\\
+% Evolutionary robotics ->\\
+% disconnect with real robots ->\\
+% brief intro to Evo-ROS (details to follow in next section->\\
+% challenges in terms of speed ->\\
+% need for parallelization, which we have done ->//
+% (bidirectional) advantages of this approach in applying evolution to real robots
+% and making evolution available to roboticists.
+% }
+% 
+% \pkm{Part 2. I think we did a little digging on this and did not find much in the ER
+% community, but perhaps you guys know of some relevant works.}

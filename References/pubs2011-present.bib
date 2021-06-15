@@ -1,0 +1,800 @@
+@STRING{ single_output_default_page_title = "<h3> Recent Publications on Evolutionary Robotics, Adaptive Software, and Artificial Life 
+<br> 
+<br> 
+<font size=-1> 
+These studies have been supported, in part, by one or more of the following projects:
+<br> 
+<a href=http://www.cse.msu.edu/orchid target=_blank><b> Orchid </b></a> (NSF),
+<a href=http://www.cse.msu.edu/aware target=_blank><b> AWARE </b></a> (ARO),
+<a href=http://www.cse.msu.edu/teams target=_blank><b> TEAMS </b></a> (NSF),
+<a href=http://www.cse.msu.edu/rapidware target=_blank><b> RAPIDware </b></a> (ONR),
+and the 
+<a href=http://www.cse.msu.edu/%7Emckinley/evopark target=_blank><b> Evolution Park Testbed </b></a> (NSF).
+<br> 
+<br> 
+<b>NOTE</b>: BIBTEX entries and indexed publication list <a href=Biblio/complete-bibliography.html> <font size=-1> here </font></a>."}
+@STRING{ single_output_default_file_title = "Publications on Adaptive Software, Evolutionary Computation, and Artificial Life" }
+
+@inproceedings{Moore.EvoROS.IROS.2017,
+   author =       {Jared M. Moore and Anthony J. Clark and Glen A. Simon and Philip K. McKinley},
+   title =        {{Evo-ROS}: Integrating Evolutionary Robotics and {ROS} (poster summary)},
+   booktitle = {Proceedings of the IEEE/RSJ International Conference on
+Intelligent Robots and Systems},
+   address = {Vancouver, BC, Canada},
+   month = {September},
+   year =         {2017},
+   projects = {X-PLORE,BEACON,TEAMS,EvoPark},
+}
+
+@inproceedings{Moore.Hierarchical.GECCO.2017,
+   author =       {Jared M. Moore and Anthony J. Clark and Philip K. McKinley},
+   title =        {Effect of animat complexity on the evolution of hierarchical control},
+   booktitle =    {Proceedings of the 2017 ACM Genetic and Evolutionary Computation Conference},
+   city =         {Berlin, Germany},
+   pages =        {147--154},
+   month = {July},
+   year =         {2017},
+   projects = {BEACON,TEAMS,EvoPark,AFRL},
+   abstract = {Animal movements are realized by a combination of high-level control from the nervous system and joint-level movement provided by the musculoskeletal system. The digital muscle model (DMM) emulates the low-level musculoskeletal system and can be combined with a high-level artificial neural network (ANN) controller forming a hybrid control strategy. Previous work has shown that, compared to ANN-only controllers, hybrid ANN/DMM controllers exhibit similar performance with fewer synapses, suggesting that some computation is offloaded to the low-level DMM. An open question is how the complexity of the robot, in terms of the number of joints, affects the evolution of the ANN control structure. We explore this question by evolving both hybrid controllers and ANN-only controllers for worm-like animats of varying complexity. Specifically, the number of joints in the worms ranges from 1 to 12. Consistent with an earlier study, the results demonstrate that, in most cases, hybrid ANN/DMM controllers exhibit equal or better performance than ANN-only controllers. In addition, above a threshold for animat complexity (number of joints), the ANNs for one variant of the hybrid controllers have significantly fewer connections than the ANN-only controllers.}
+}
+
+@article{Connelly.JEB.2017,
+  author =       {Brian D. Connelly and Eric L. Bruger and Philip K. McKinley and Christopher M. Waters},
+  title =        {Resource Abundance and the Critical Transition to Cooperation},
+  year =         {2017},
+  journal = {Journal of Evolutionary Biology},
+  volume = {30},
+  number = {4},
+  pages = {750-761},
+  URL = {http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1420-9101},
+  projects = {CNS-1059373, CNS-0915855, DBI-0939454, CCF-0820220, CNS-0751155 and others},
+  abstract =     {Cooperation is abundant in nature, occurring at all levels of biological complexity. Yet cooperation is continually threatened by subversion from non-cooperating cheaters. Previous studies have shown that cooperation can nevertheless be maintained when the benefits that cooperation provides to relatives outweigh the associated costs. These fitness costs and benefits are not fixed properties, but can be affected by the environment in which populations reside. Here, we describe how one environmental factor, resource abundance, decisively affects the evolution of cooperative public goods production in two independent evolving systems. In the Avida digital evolution platform, populations evolved in environments with different levels of a required resource, while populations of Vibrio cholerae evolved in the presence of different nutrient concentrations. In both systems, cooperators and cheaters co-existed stably in resource-rich environments, while cheaters dominated in resource-poor environments. These two outcomes were separated by a sharptransition that occurred at a critical level of resource. These results offer new insights into how the environment affects the evolution of cooperation and highlight the challenges that populations of cooperators face when they experience environmental change.},
+}
+
+
+@article{Moore.DMM.ALIFE.2016,
+  author =       {J. M. Moore and Philip K. McKinley},
+  title =        {Evolution of Joint-Level Control for Quadrupedal Locomotion},
+  year =         {2017},
+  journal = {Artificial Life},
+  volume = {23},
+  number = {1},
+  pages = {58--79},
+  URL = {http://www.mitpressjournals.org/loi/artl},
+  projects = {CNS-1059373, CNS-0915855, DBI-0939454, and MSU DFI},
+  abstract =     {In this paper we investigate a hierarchical approach to robot
+control inspired by joint-level control in animals. The method
+combines a high-level controller, consisting of an artificial
+neural network (ANN), with joint-level controllers based on
+digital muscles. In the digital muscle model (DMM), morphological and control aspects of joints evolve concurrently, emulating
+the musculoskeletal system of natural organisms. We introduce and
+compare different approaches for connecting outputs of the ANN to
+DMM-based joints. We also compare the performance of evolved
+animats with ANN/DMM controllers to those governed by only
+high-level (ANN-only) and low-level (DMM-only) controllers. These
+results show that DMM-based systems outperform their ANN-only
+counterparts while also exhibiting less complex ANNs in terms of
+the number of connections and neurons. The main contribution of
+this work is to explore the evolution of artificial systems
+where, as in natural organisms, some aspects of control are
+realized at the joint level.},
+}
+
+@inproceedings{Clark.Modes.ICES.2016,
+   author =       {Anthony J. Clark and and Byron DeVries and Jared M. Moore and Betty H.C. Cheng and Philip K. McKinley},
+   title =        {An Evolutionary Approach to Discovering Execution Mode Boundaries for Adaptive Controllers},
+   booktitle = {Proceedings of the IEEE International Conference on Evolvable Systems},
+   address = {Athens, Greece},
+   URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Clark.Modes.ICES.2016.pdf},
+   month = {December},
+   year =         {2016},
+   projects = {X-PLORE,BEACON,TEAMS,EvoPark,CNS-1305358 (betty), the Ford Motor Company, General Motors Research},
+   abstract = {Adaptive controllers enable cyber-physical systems, such as autonomous robots, to manage uncertain conditions during execution. However, there is a limit to the range of conditions that can be handled by a given controller. When this limit is exceeded, a controller might fail to respond as expected, not only rendering it ineective but possibly putting the entire system at risk. In this paper, we describe a method based on evolutionary search for automatically enhancing, and discovering the boundaries of, a given adaptive controller. Collectively, these boundaries define an execution mode for that controller. Explicit specification of mode boundaries facilitates the development of decision logic that determines, based on system state and sensed conditions, when to switch to a dierent execution mode and typically a dierent controller, such as one for providing fail-safe operation. To evaluate the proposed approach, we apply it to a robotic fish propelled by a flexible caudal fin that is governed by a model-free adaptive controller. Experimental results demonstrate that this approach is eective in characterizing a controller’s ability to adapt to environmental dynamics, including physical damage to the robot itself.},
+}
+
+@inproceedings{Moore.SAB.2016,
+   author =       {J. M. Moore and Philip K. McKinley},
+   title =        {A Comparison of Multiobjective Algorithms in Evolving Quadrupedal Gaits},
+   booktitle =    {Proceedings of the 14th International Conference on the Simulation of Adaptive Behavior (SAB)},
+   city =         {Aberystwyth, UK},
+   pages =        {157-169},
+   month =        {August},
+   year =         {2016},
+   URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Moore.SAB.2016.pdf},
+   projects = {BEACON,TEAMS,EvoPark,MSU},
+   abstract =     {Robotic systems, whether physical or virtual, must balance
+multiple objectives to operate effectively. Beyond performance
+metrics such as speed and turning radius, efficiency of movement,
+stability, and other objectives contribute to the overall
+functionality of a system. Optimizing multiple objectives
+requires algorithms that explore and balance improvements in
+each. In this paper, we evaluate and compare two multiobjective
+algorithms, NSGA-II and the recently proposed Lexicase
+selection, investigating distance traveled, efficiency, and
+vertical torso movement for evolving gaits in quadrupedal
+animats. We explore several variations of Lexicase selection,
+including different parameter configurations and weighting
+strategies. A control treatment evolving solely on distance
+traveled is also presented as a baseline. All three algorithms
+(NSGA-II, Lexicase, and Control) produce effective locomotion in
+the quadrupedal animat, but differences arise in performance and
+efficiency of movement. The NSGA-II algorithm significantly
+outperforms Lexicase selection in all three objectives, while
+Lexicase selection significantly outperforms the control in two
+of the three objectives.  In this paper we investigate a
+hierarchical approach to robot},
+}
+
+@article{Clark.JournalBB.2015,
+  author =       {Anthony J. Clark and Xiaobo Tan and Philip K. McKinley},
+  title =        {Evolutionary Multiobjective Design of a Flexible Caudal Fin for Robotic Fish},
+  journal = 	 {Bioinspiration \& Biomimetics, special issue on Bioinspired Soft Robotics},
+  volume = 		 {10},
+  number =       {6},
+   URL = {http://iopscience.iop.org/article/10.1088/1748-3190/10/6/065006/meta},
+   month = 		 {November},
+  year =         {2015},
+  abstract = {Robotic fish accomplish swimming by deforming their bodies or other fin-like appendages. As an emerging class of embedded computing system, robotic fish are anticipated to play an important role in environmental monitoring, inspection of underwater structures, tracking of hazardous wastes and oil spills, and the study of live fish behaviors. While integration of flexible materials (into the fins and/or body) holds the promise of improved swimming performance (in terms of both speed and maneuverability) for these robots, such components also introduce significant design challenges due to the complex material mechanics and hydrodynamic interactions. The problem is further exacerbated by the need for the robots to meet multiple objectives (e.g., both speed and energy efficiency). In this paper, we propose an evolutionary multiobjective optimization approach to the design and control of a robotic fish with a flexible caudal fin. Specifically, we use the NSGA-II algorithm to investigate morphological and control parameter values that optimize swimming speed and power usage. Several evolved fin designs are validated experimentally with a small robotic fish, where fins of different stiffness values and sizes are printed with a multi-material 3D printer. Experimental results confirm the effectiveness of the proposed design approach in balancing the two competing objectives.},
+}
+
+
+@inproceedings{Moore.Spine.ECAL.2015,
+   author =       {J. M. Moore and P. K. McKinley and C. P. McGowan},
+   title =        {Evaluating the Effect of a Flexible Spine on the Evolution of Quadrupedal Gait},
+   booktitle =    {Proceedings of the 13th European Conference on Artificial Life},
+   city =         {York, UK},
+   pages =        {166--173},
+   URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Moore.Spine.ECAL.2015.pdf},
+   month = {July},
+   year =         {2015},
+   projects = {BEACON,TEAMS,EvoPark,Testbed, various Tan grants},
+
+   abstract={Animals demonstrate a level of agility currently unmatched in
+their robotic counterparts. The elasticity of muscles and tendons increase not only performance, but also the efficiency of
+movements. In contrast, robots are often constructed with rigid
+components connected by motors. However, recently compliant
+actuators and materials have been introduced to enhance robot
+designs, emulating the flexibility of natural organisms. In this
+paper, we incorporate passive flexibility into the spine of a
+quadruped animat and employ computational evolution to generate
+gaits. Results indicate that spine flexibility significantly
+increases both performance and efficiency of evolved
+individuals. Moreover, evolving the degree of spine flexibility
+along with artificial neural network controllers produces the
+highest performing solutions.},
+}
+
+
+@inproceedings{Clark.MFAC.2015,
+   author =       {Anthony J. Clark and Philip K. McKinley and Xiaobo Tan},
+   title =        {Enhancing a Model-Free Adaptive Controller through Evolutionary Computation},
+   booktitle =    {Proceedings of the 2015 ACM Genetic and Evolutionary Computation Conference},
+   city =         {Madrid, Spain},
+   pages =        {137--144},
+   URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Clark.MFAC.GECCO.2015.pdf},
+   month = {July},
+   year =         {2015},
+   projects = {BEACON,TEAMS,EvoPark,Testbed, various Tan grants},
+   abstract = {Many robotic systems experience fluctuating dynamics during their lifetime. Variations can be attributed in part to material degradation and decay of mechanical hardware. One approach to mitigating these problems is to utilize an adaptive controller. For example, in model-free adaptive control (MFAC) a controller learns how to drive a system by continually updating link weights of an artificial neural network (ANN). However, determining the optimal control parameters for MFAC, including the structure of the underlying ANN, is a challenging process. In this paper we investigate how to enhance the online adaptability of MFAC-based systems through computational evolution. We apply the proposed methods to a simulated robotic fish propelled by a flexible caudal fin. Results demonstrate that the robot is able to effectively respond to changing fin characteristics and varying control signals when using an evolved MFAC controller. Notably, the system is able to adapt to characteristics not encountered during evolution. The proposed technique is general and can be applied to improve the adaptability of other cyber-physical systems.},
+}
+
+@inproceedings{Clark.Pareto.ICES.2014,
+   author =       {Anthony J. Clark and Jianxun Wang and Xiaobo Tan and Philip K. McKinley},
+   title =        {Balancing Performance and Efficiency in a Robotic Fish with Evolutionary Multiobjective Optimization},
+   booktitle = {Proceedings of the IEEE International Conference on Evolvable Systems, held in conjunction with the 2014 IEEE Symposium on 
+ 		Computational Intelligence (SSCI)},
+   address = {Orlando, Florida},
+   URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Clark.Balancing.ICES.2015.pdf},
+   month = {December},
+   year =         {2014},
+   projects = {BEACON,TEAMS,EvoPark,Testbed, various Tan grants},
+   abstract = {In this paper, we apply evolutionary multiobjective optimization to the design of a robotic fish with a flexible caudal fin. Specifically, we use the NSGA-II algorithm to discover solutions (physical dimensions, flexibility, and control parameters) that optimize both swimming performance and power efficiency. The optimization is conducted in a custom simulation environment based on an accurate yet computationally-efficient model of hydrodynamics. The results of these simulations reveal general principles that can be applied in the design of robotic fish morphology and control. To verify that the simulation results are physically relevant, we selected several of the evolved solutions, fabricated flexible caudal fins using a multi-material 3D printer, and attached them to a robotic fish prototype. Experimental results, conducted in a large water tank, correspond reasonably well to simulation results in both swimming performance and power efficiency, demonstrating the usefulness of evolutionary computation methods to this application domain.}	
+}
+
+
+@article{Wang.Fin.Journal.2014,
+  author =       {Jianxun Wang and Philip K. McKinley and Xiaobo Tan},
+  title =        {Dynamic Modeling of Robotic Fish with a Base-actuated Flexible Tail},
+  journal = 	 {Journal of Dynamic Systems, Measurement and Control},
+  volume = 		 {137},
+  number =       {1},
+  month =        {August},
+  year =         {2014},
+  URL = 	 {http://dynamicsystems.asmedigitalcollection.asme.org/article.aspx?articleid=1891075},
+  projects =     {BEACON, TEAMS, Testbed, EvoPark, Orchid, Tan grants},
+  newdoi = 	 {10.1115/1.4028056},
+  abstract =     {In this paper, we develop a new dynamic model for a robotic fish propelled by a flexible tail actuated at the base. The tail is modeled by multiple rigid segments connected in series through rotational springs and dampers, and the hydrodynamic force on each segment is evaluated using Lighthill's large-amplitude elongated-body theory. For comparison, we also construct a model using linear beam theory to capture the beam dynamics. To assess the accuracy of the models, we conducted experiments with a free-swimming robotic fish. The results show that the two models have almost identical predictions when the tail undergoes small deformation, but only the proposed multisegment model matches the experimental measurement closely for all tail motions, demonstrating its promise in the optimization and control of tail-actuated robotic fish.},
+}
+
+@inproceedings{Clark.MFAC.EPS.2014,
+  author =       {Anthony Clark and Philip K. McKinley and Xiaobo Tan},
+  title =        {On-Board Evolution of a Model-Free Adaptive Controller for a Robotic Fish},
+  booktitle = 	 {Proceedings of Evolution of Physical Systems Workshop, held in conjunction with
+		the 14th International Conference on the Synthesis and Simulation of Living Systems (ALIFE 14)},
+  address =      {New York, New York},
+   URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Clark.MFAC.EPS.2014.pdf},
+  month = 	 {July},
+  year =         {2014},
+  projects =     {should reference, but does not: EvoPark, TEAMS, BEACON, MSU-DFI},
+  accounts = 	 {should reference, but does not: CNS-1059373, CNS-0915855, DBI-0939454},
+  mynote2 = {original title: Expecting the Unexpected: Evolving Model-Free Adaptive Control for Robotic Fish},
+  abstract =     {Many physical systems experience fluctuating dynamics
+throughout their lifetime. Variations can be attributed in part
+to material degradation and decay of mechanical
+hardware. Designing control strategies that mitigate the
+negative effects of such variations can be difficult. One
+approach is to utilize model-free adaptive control (MFAC), which
+learns how to control a system by continually updating link
+weights of an artificial neural network (ANN) (Cheng,
+2004). However, determining the optimal values of various control
+parameters, as well as the structure of the ANN, is
+challenging. In this study, we investigate how to enhance the
+on-board adaptability of MFAC-based systems through computational
+evolution.},
+}
+
+
+
+@inproceedings{Moore.Clark.Station.ALIFE.2014,
+  author =       {Jared M. Moore and Anthony J. Clark},
+  title =        {Hold the Spot: Evolution of Generalized Station Keeping for an Aquatic Robot},
+  booktitle = 	 {Proceedings of the 14th International Conference on the Synthesis and Simulation of Living Systems (ALIFE 14)},
+  address =      {New York, New York},
+  month = 	 {July},
+  year =         {2014},
+  pages =        {200--201},
+  URL = {https://mitpress.mit.edu/sites/default/files/titles/content/alife14/ch033.html},
+  projects =     {should reference, but does not: EvoPark, TEAMS, BEACON, MSU-DFI},
+  accounts = 	 {should reference, but does not: CNS-1059373, CNS-0915855, DBI-0939454},
+  newdoi = 	 {10.7551/978-0-262-32621-6-ch033},
+  abstract =     {In this paper, we present a strategy to evolve neurocontrollers in aquatic robots capable of generalized station keeping, that is, maintaining a position in the presence of various water flows. Evolved behaviors exhibit a variety of complex fin/flipper movements that enable the robot to react and move against changing flows. Moreover, results indicate that some sensor modalities are beneficial when the robot is placed in novel environments, though little used during the evolutionary process.},
+}
+
+@inproceedings{Moore.Web.ALIFE.2014,
+  author =       {Jared M. Moore and Anthony J. Clark and Philip K. McKinley},
+  title =        {Evolutionary Robotics on the Web with WebGL and Javascript},
+  booktitle = 	 {Proceedings of the Workshop on Artificial Life and the Web 2014, held in conjunction
+with the 14th International Conference on the Synthesis and Simulation of Living Systems (ALIFE 14)},
+  address =      {New York, New York},
+  month = 	 {July},
+  year =         {2014},
+  URL = {http://arxiv.org/abs/1406.3337},
+  projects =     {EvoPark, TEAMS, BEACON, MSU-DFI},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454},
+  abstract =     {Web-based applications are highly accessible to users, providing rich, interactive content while eliminating the need to install software locally. However, evolutionary robotics (ER) has faced challenges in this domain as web-based technologies have not been amenable to 3D physics simulations. Traditionally, physics-based simulations require a local installation and a high degree of user knowledge to configure an environment, but the emergence of Javascript-based physics engines enables complex simulations to be executed in web browsers. These developments create opportunities for ER research to reach new audiences by increasing accessibility. In this work, we introduce two web-based tools we have built to facilitate the exchange of ideas with other researchers as well as outreach to K-12 students and the general public. The first tool is intended to distribute and exchange ER research results, while the second is a completely browser-based implementation of an ER environment.},
+}
+
+
+@inproceedings{Moore.DigitalMuscles.ALIFE.2014,
+  author =       {Jared M. Moore and Philip K. McKinley},
+  title =        {Investigating Modular Coupling of Morphology and Control with Digital Muscles},
+  booktitle = 	 {Proceedings of the 14th International Conference on the Synthesis and Simulation of Living Systems (ALIFE 14)},
+  address =      {New York, New York},
+  pages = 	 {148--155},
+  month = 	 {July},
+  year =         {2014},
+  URL = {https://mitpress.mit.edu/sites/default/files/titles/content/alife14/ch025.html},
+  projects =     {EvoPark, TEAMS, BEACON, MSU-DFI},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454},
+  newdoi = 	 {10.7551/978-0-262-32621-6-ch025},
+  abstract =     {The musculoskeletal systems of animals are governed by a complex network of neurons that define both high- and low-level control. Individual joints are manipulated by multiple muscles acting as effectors for both movement and stabilization. We previously proposed a digital muscle model (DMM), where the morphological and control aspects of simulated joints evolve concurrently. The resulting solutions can provide insight into the evolution of natural organisms as well as possible designs for engineered systems. In this paper, we explore the integration of this model with an artificial neural network (ANN), focusing on the communication connections between the two. In the singly-connected strategy, a single ANN output is delivered to a joint; each constituent muscle responds to the signal according to an evolved function. In the individually-connected strategy, a unique ANN output is delivered to each simulated muscle. Results indicate that for low degree-of-freedom (DOF) robots, the individually-connected systems exhibit higher fitness than the singly-connnected systems. However, in larger DOF robots, the two strategies perform comparably, despite the fact that evolved ANNs for the singly-connected system are considerably simpler in terms of the number of connections in the network.},
+}
+
+@inproceedings{Moore.DigitalMuscles.GECCO.2014,
+  author =       {Jared M. Moore and Philip K. McKinley},
+  title =        {Evolving Joint-Level Control with Digital Muscles},
+  booktitle = 	 {Proceedings of the 2014 ACM Genetic and Evolutionary Computing Conference},
+  address =      {Vancouver, British Columbia, Canada},
+  pages = 	 {209--216},
+  year =         {2014},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Moore.DMM.GECCO.2014.pdf},
+  projects =     {EvoPark, TEAMS, BEACON, MSU-DFI},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454},
+  abstract =     {The neuromuscular systems of animals are governed by extremely complex networks of control signals, sensory feedback loops, and mechanical interactions. Morphology and control are inherently intertwined. In the case of animal joints, groups of muscles work together to provide power and stability to move limbs in a coordinated manner. In contrast, many robot controllers handle both high-level planning and low-level control of individual joints. In this paper, we propose a joint-level control method, called digital muscles, that operates in a manner analogous to biological muscles, yet is abstract enough to apply to conventional robotic joints. An individual joint is controlled by multiple muscle nodes, each of which responds to a control signal according to a node-specific activation function. Evolving the physical orientation of muscle nodes and their respective activation functions enables relatively complex and coordinated gaits to be realized with simple high-level control. Even using a sinusoid as the high-level control signal, we demonstrate the evolution of effective gaits for a simulated quadruped. The proposed model realizes a control strategy for governing the behavior of individual joints, and can be coupled with a high-level controller that focuses on decision making and planning.},
+}
+
+@inproceedings{Rose.SelfModeling.ERLARS.2013,
+  author =       {Matthew J. Rose and Anthony J. Clark and Jared M. Moore and Philip K. McKinley},
+  title =        {Just Keep Swimming: Accounting for Uncertainty in Self-Modeling Aquatic Robots},
+  booktitle = 	 {Proceedings of the 6th International Workshop on Evolutionary and Reinforcement Learning for 
+			Autonomous Robot Systems},
+  address =      {Taormina, Italy},
+  month = 	 {September},
+  year =         {2013},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Rose.SelfModeling.ERLARS.2013.pdf},
+  projects =     {EvoPark, TEAMS, BEACON, Orchid, Testbed},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454, CCF-0820220, CNS-0751155},
+  newdoi =       {10.1.1.409.290 ?},
+  abstract =     {A robust robotic system should be able to overcome unforeseen conditions, including physical damage and component failure occur- ring after deployment. A self-modeling system maintains an internal image of itself, which can be updated to reflect incurred damage. The robot can use this model to derive (or evolve) new behaviors such as gaits that account for the damage. In this paper we describe an approach to self-modeling for aquatic robots. The aquatic environment presents unique challenges to the self-modeling process, including the inherent uncertainty in the robot's orientation and configuration. We propose and evaluate two approaches to automatically infer missing contextual information, which otherwise complicates the task of developing an accurate model. We demonstrate the effectiveness of these methods on a particular aquatic robot intended for remote sensing},
+}
+
+@inproceedings{Moore.Hopping.ECAL.2013,
+  author =       {Jared M. Moore and Anne K. Gutmann and Craig P. McGowan and Philip K. McKinley},
+  title =        {Exploring the Role of the Tail in Bipedal Hopping through Computational Evolution},
+  booktitle = 	 {Proceedings of the 12th European Conference on Artificial Life (ECAL)},
+  address =      {Taormina, Italy},
+  pages = 	 {11--18},	
+  month = 	 {September},
+  year =         {2013},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Moore.Hopping.ECAL.2013.pdf},
+  projects =     {EvoPark, TEAMS, BEACON, Orchid, Testbed},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454, CCF-0820220, CNS-0751155},
+  abstract =     {Bipedal hopping has evolved as a mode of terrestrial locomotion in relatively few mammalian species. Despite large differences in body size, habitat use, and having evolved independently, all species that use bipedal hopping have remarkably similar limb morphology and posture. In addition, these species all have relatively long tails, presumably to assist in maintaining stability. However, the evolution of this behavior, and specifically the role of the tail, is not well understood. In this paper, we explore the evolution of bipedal hopping in a simulated animat, using a relatively simple musculoskeletal model and a rigid-body physics simulation environment. Results indicate that characteristically different hopping gaits evolve with alterations to the morphology, including the structure and actuation of the tail. Many of the the results are consistent with behaviors and morphologies observed in natural organisms. However, in some cases effective hopping evolved despite key differences from nature, potentially inspiring new design approaches in robotic and biomechanical systems.},
+}
+
+
+@inproceedings{Moore.GECCO.2013,
+  author =       {Jared M. Moore and Anthony J. Clark and Philip K. McKinley},
+  title =        {Evolution of Station Keeping as a Response to Flows in an Aquatic Robot},
+  booktitle = 	 {Proceedings of the 2013 ACM Genetic and Evolutionary Computing Conference},
+  address =      {Amsterdam, The Netherlands},
+  pages = 	 {239--246},
+  year =         {2013},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Moore.Station.GECCO.2013.pdf},
+  projects =     {EvoPark, TEAMS, BEACON, Orchid, Testbed},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454, CCF-0820220},
+  abstract =     {Developing complex behaviors for aquatic robots is a difficult engineering challenge due to the uncertainty of an underwater environment. Neuroevolution provides one method of dealing with this type of problem. Artificial neural networks discern different conditions by mapping sensory input to responses, and evolutionary computation provides a training algorithm suitable to the high dimensionality of the problem. In this paper, we present results of applying neuroevolution to an aquatic robot tasked with station keeping, that is, maintaining a given position despite surrounding water flow. The virtual device exposed to evolution is modeled after a physical counterpart that has been fabricated with a 3D printer and tested in physical environments. Evolved behaviors exhibit a variety of unexpected, complex fin/flipper movements that enable the robot to achieve and maintain station, despite water flow from different directions. Moreover, the results show that evolved controllers are able to effectively carry out this task using only information from a simulated accelerometer and gyroscope, matching the inertial measurement unit (IMU) on the actual robot.},
+}
+
+@inproceedings{Clark.poster.GECCO.2013,
+  author =       {Anthony J. Clark and Philip K. McKinley},
+  title =        {Evolutionary Optimization of Robotic Fish Control and Morphology (poster summary)},
+  booktitle = 	 {Proceedings of the 2013 ACM Genetic and Evolutionary Computing Conference Companion},
+  address =      {Amsterdam, The Netherlands},
+  pages = 	 {21--22},
+  year =         {2013},
+  projects =     {EvoPark, TEAMS, BEACON, Orchid, Testbed},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454, CCF-0820220},
+  abstract =     {},
+}
+
+@inproceedings{Moore.CEC.2013,
+  author =       {Jared M. Moore and Philip K. McKinley},
+  title =        {Evolution of an Amphibious Robot with Passive Joints},
+  booktitle = 	 {Proceedings of the 2013 IEEE Congress on Evolutionary Computation},
+  address =      {Cancun, Mexico},
+  pages = 	 {1443--1450},
+  year =         {2013},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Moore.Amphibious.CEC.2013.pdf},
+  projects =     {EvoPark, TEAMS, BEACON, Orchid, Testbed},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454, CCF-0820220},
+  abstract =     {Passive joints provide a means to reduce the mechanical complexity of a robot because they do not require direct actuation from a motor. However, the inclusion of such components complicates the development process, as their behavior is highly dependent on external stimuli in combination with actuation of other components. In this paper, we describe a study on the evolution of morphological characteristics and controller parameters for an amphibious robot with passive arm joints. Results show that this approach is able to exploit the properties of passive joints, producing effective locomotion in both aquatic and terrestrial environments. Evolved solutions demonstrate a strong coupling between fin morphology and control strategy with respect to performance.},
+}
+
+
+@inproceedings{Cheng.CMSBSE.2013,
+  author =       {Betty H. C. Cheng and Andres J. Ramirez and Philip K. McKinley},
+  title =        {Harnessing Evolutionary Computation to Enable Dynamically Adaptive 
+			Systems to Manage Uncertainty},
+  year =         {2013},
+  booktitle =	 {Proceedings of the First International Workshop on Combining Modelling 
+                  and Search-Based Software Engineering (CMSBSE)},
+  address = 	 {San Francisco, California, USA},
+  month = 	 {May},
+  abstract = {A dynamically adaptive system (DAS) must be able to monitor its
+environment, adapt to changing conditions, and be resilient to
+component failures and attacks. However, the designer of such an
+adaptive system is faced with a challenging set of tasks:
+anticipating how and when the system will need to adapt in the
+future, codifying this behavior in decision-making components to
+govern the adaptation, and ensuring system integrity during and
+after adaptation. These tasks are particularly difficult for
+systems that must operate safely in the face of continuous
+dynamics and environmental uncertainty. In the biological world,
+evolution has done a remarkable job of producing systems that
+adapt to their environment and survive dynamic and adverse
+conditions. In this talk, we discuss preliminary investigations
+and motivate future investigation for how to exploit this power
+by integrating evolutionary computation into the model-based
+development and run-time support of high-assurance,
+dynamically-adaptable systems},
+  projects =     {check on paper??? :EvoPark, TEAMS, Testbed, Orchid, BEACON?},
+  abstract =     {},
+}
+
+
+@article{Knoester.TEC.Consensus.2012,
+  author =       {David B. Knoester and Heather J. Goldsby and Philip K. McKinley},
+  title =        {Genetic Variation and the Evolution of Consensus in Digital Organisms},
+  journal = 	 {IEEE Transactions on Evolutionary Computation},
+  volume = 	 {17},
+  number = 	 {3},
+  pages =        {403--417},
+  year =         {2013},
+  URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6208853},
+  projects =     {BEACON, TEAMS, Orchid, Testbed, AWARE},
+  doi =          {10.1109/TEVC.2012.2201725},
+  abstract =     {In this paper, we describe a study of the evolution of consensus, a cooperative behavior in which members in both homogeneous and heterogeneous groups, must agree on information sensed in their environment. We conducted the study using digital evolution, a form of evolutionary computation where a population of computer programs (digital organisms) exists in a user-defined computational environment and is subject to instruction-level mutations and natural selection. We placed these digital organisms into groups whose fitness relied upon their ability to perform consensus. We then tested different degrees and types of genetic variation present in the population, based on biologically inspired models of gene flow, including mutation, sexual recombination, migration, and horizontal gene transfer. Our experimental treatments examined the effect of these processes on genetic variation and groups' ability to reach consensus. The results of these experiments demonstrate that while genetic heterogeneity within groups increases the difficulty of the consensus task, a surprising number of groups were able to overcome these obstacles and evolve this cooperative behavior.},
+}
+
+@inproceedings{Wang.Model.2012,
+  author =       {J. Wang and P. K. McKinley and X. Tan},
+  title =        {Dynamic Modeling of Robotic Fish with a Flexible Caudal Fin},
+  year =         {2012},
+Booktitle = {Proceedings of the ASME 2012 5th Annual Dynamic Systems and Control
+            Conference, joint with the JSME 2012 11th Motion and Vibration Conference},
+note = {Paper DSCC2012-MOVIC2012-8695},
+  address = 	 {Ft. Lauderdale, Florida, USA},
+  month = 	 {October},
+  projects =     {EvoPark, TEAMS, Testbed, Orchid *** need to add BEACON!!},
+  abstract =     {},
+}
+
+@inproceedings{Knoester.SASO.Networks.2012,
+  author =       {David B. Knoester and Philip K. McKinley},
+  title =        {Constructing Communication Networks with Evolved Digital Organisms},
+  year =         {2012},
+  booktitle = {Proceedings of the Sixth IEEE International Conference on Self-Adaptive and Self-Organizing Systems},
+  pages = {139--138},
+  address = {Lyon, France},
+  month = {September},
+  URL = {http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6394119&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6394119},
+  localURL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/knoester-constructing-2012.pdf},
+  projects = {BEACON, TEAMS, Orchid,Testbed,AWARE},
+  doi =          {already added 10.1109/SASO.2012.34},
+  abstract =     {},
+}
+
+@InProceedings{Clark.ALIFE.2012,
+  author =       {Anthony Clark and Jared Moore and Jianxun Wang and Xiaobo Tan and Philip McKinley},
+  title =        {Evolutionary design and experimental validation of a flexible caudal fin for 
+			robotic fish},
+  year =         {2012},
+  booktitle =    {Proceedings of the Thirteenth International 
+			Conference on the Synthesis and Simulation of Living Systems},
+  address =      {East Lansing, Michigan, USA},
+  month =        {July},
+  pages =        {325--332},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Clark.Fish.ALIFE.2012.pdf},
+  projects =     {EvoPark, TEAMS, BEACON, Orchid, Testbed, AWARE, plus Xiaobo grants},
+  accounts = 	 {CNS-1059373, CNS-0915855, DBI-0939454, CCF-0820220, IIS-0916720, 
+			ECCS-1050236, ECCS-1029683 and
+			CNS-0751155; and by U.S. Army Grant W911NF-08-1-0495},
+  doi =          {already added 10.7551/978-0-262-31050-5-ch043},
+  abstract =     {},
+}
+
+@InProceedings{Moore.GECCO.2012,
+  author =       {Jared M. Moore and Philip K. McKinley},
+  title =        {Evolving Flexible Joint Morphologies},
+  year =         {2012},
+  booktitle =    {Proceedings of the ACM Genetic and Evolutionary Computation Conference (GECCO-2012)}, 
+  address =      {Philadelphia, Pennsylvania},
+  pages =        {145--152},
+  month =        {July},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Moore.Flexible.GECCO.2012.pdf},
+  projects =     {EvoPark, BEACON, Testbed, TEAMS, Orchid, AWARE},
+  doi =          {10.1145/2330163.2330184},
+  abstract =     {Transferring virtual robotic designs into physical robots has become possible with the development of 3D printers. Accurately simulating the performance of real robots in a virtual environment requires modeling a variety of conditions, including the physical composition of the robots themselves. In this paper, we investigate how modeling material flexibility through the use of a passive joint affects the resulting arm morphology and gait of a crawling virtual robot. Results indicate that flexibility can be a beneficial characteristic of robotic morphology design while also providing insight into the benefits of modeling material properties in a simulation environment.},
+}
+
+@InProceedings{Byers.Enzymes.GECCO.2012,
+  author =       {C. Byers and B. H. C. Cheng and P. K. McKinley},
+  title =        {Exploring the Evolution of Internal Control Structure using 
+			Digital Enzymes ({Poster Summary})},
+  year =         {2012},
+  booktitle =    {Proceedings of the ACM Genetic and Evolutionary Computation Conference (GECCO-2012)}, 
+  pages =        {1407--1408},
+  address =      {Philadelphia, Pennsylvania},
+  month =        {July},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/byers-poster-2012.pdf},
+  projects =     {EvoPark, BEACON, Testbed, TEAMS, Orchid, AWARE},
+  doi =          {10.1145/2330784.2330956},
+  abstract =     {The Digital Enzyme model of control is based on the bottom-up, reactive process of signal transduction found in cells. An earlier study applied a specific instance of the this model to the foraging problem. Here, we extend the system and use it to explore a fundamental question in both biology and evolutionary computation, namely, whether environmental complexity is a driving factor for an organism''s internal control structure. To address this question, we extended the original system to allow the open-ended evolution of the unique programs, instructions, and threads within each controller. With the extended model, we were able to evolve successful foraging strategies that nearly doubled the performance of strategies found in the earlier work. In response to increasing environmental complexity, we discovered a high degree of variation for the number of programs, threads, and instructions that produced successful strategies. These results imply that environmental complexity does not require evolutionary search methods to explore regions of the search space characterized by parallel and distributed control. However, strategies found within these regions were as successful as strategies governed by a single program and thread, highlighting the importance of evolutionary search techniques that enable the open-ended evolution of key internal control components.},
+}
+
+@InProceedings{Connelly.SEEDS.EvoSoft.2012,
+  author =       {Brian D. Connelly and Luis Zaman and Philip K. McKinley},
+  title =        {The {SEEDS} Platform for Evolutionary and Ecological Simulations},
+  year =         {2012},
+  booktitle =    {Proceedings of the Evolutionary Computation Software Systems Workshop, published in the GECCO Companion},
+  pages =        {133--140},
+  address =      {Philadelphia, Pennsylvania},
+  month =        {July},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/connelly-seeds-2012.pdf},
+  projects =     {BEACON, EvoPark, TEAMS, Orchid, Testbed},
+  accounts = {DBI-0939454, CNS-1059373, CNS-0915855, CCF-0820220, and CNS-0751155},
+  abstract =     {},
+}
+
+@article{Beckmann.QQ.ALIFE.2012,
+  author =       {B. E. Beckmann and David B. Knoester and B. D. Connelly and C. M. Waters and Philip K. McKinley},
+  title =        {Evolution of Resistance to Quorum Quenching in Digital Organisms},
+  year =         {2012},
+  volume =       {18},
+  number =       {3},
+  pages =        {291--310},
+  journal = {Artificial Life},
+  URL = {http://www.mitpressjournals.org/doi/abs/10.1162/artl_a_00066},
+  projects = {BEACON, TEAMS, Orchid,Testbed,AWARE},
+  doi =          {10.1162/artl_a_00066},
+  abstract =     {Quorum sensing (QS) is a collective behavior whereby actions of individuals depend on the density of the surrounding population. Bacteria use QS to trigger secretion of digestive enzymes, formation and destruction of biofilms, and, in the case of pathogenic organisms, expression of virulence factors that cause disease. Investigations of mechanisms that prevent or disrupt QS, referred to as quorum quenching, are of interest because they provide a new alternative to antibiotics for treating bacterial infections. Traditional antibiotics either kill bacteria or inhibit their growth, producing selective pressures that promote resistant strains. In contrast, quorum quenching and other so-called anti-infective strategies focus on altering behavior. In this article we evolve QS in populations of digital organisms, a type of self-replicating computer program, and investigate the effects of quorum quenching on these populations. Specifically, we injected the populations with mutant organisms that were impaired in selected ways to disrupt the QS process. The experimental results indicate that the rate at which these mutants are introduced into a population influences both the evolvability of QS and the persistence of an existing QS behavior. Surprisingly, we also observed resistance to quorum quenching. Effectively, populations evolved resistance by reaching quorum at lower cell densities than did the parent strain. Moreover, the level of resistance was highest when the rate of mutant introduction increased over time. These results show that digital organisms can serve as a model to study the evolution and disruption of QS, potentially informing wet-lab studies aimed at identifying targets for anti-infective development.},
+}
+
+
+@inproceedings{UncertaintyTaxonomy-SEAMS12,
+	Address = {Zurich, Switzerland},
+	Author = {Andres J. Ramirez and Betty H. C. Cheng},
+	Booktitle = {Proceedings of the International Symposium on Software Engineering for 
+		Adaptive and Self-Managed Systems (SEAMS)},
+	Month = {June},
+	Title = {A Taxonomy of Uncertainty for Dynamically Adaptive Systems},
+	pages =  {99--108},
+	Year = {2012},
+        URL =  {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6224396},
+        localURL =  {http://www.cse.msu.edu/%7emckinley/Pubs/files/taxonomy-seams-2012.pdf},
+
+	projects = {AWARE, others?},
+  doi =          {10.1109/SEAMS.2012.6224396},
+  abstract =     {Self-reconfiguration enables a dynamically adaptive system (DAS) to satisfy requirements even as detrimental system and environmental conditions arise. A DAS, especially one intertwined with physical elements, must increasingly reason about and cope with unpredictable events in its execution environment. Unfortunately, it is often infeasible for a human to exhaustively explore, anticipate, or resolve all possible system and environmental conditions that a DAS will encounter as it executes. While uncertainty can be difficult to define, its effects can hinder the adaptation capabilities of a DAS. The concept of uncertainty has been extensively explored by other scientific disciplines, such as economics, physics, and psychology. As such, the software engineering DAS community can benefit from leveraging, reusing, and refining such knowledge for developing a DAS. By synthesizing uncertainty concepts from other disciplines, this paper revisits the concept of uncertainty from the perspective of a DAS, proposes a taxonomy of potential sources of uncertainty at the requirements, design, and execution phases, and identifies existing techniques for mitigating specific types of uncertainty. This paper also introduces a template for describing different types of uncertainty, including fields such as source, occurrence, impact, and mitigating strategies. We use this template to describe each type of uncertainty and illustrate the uncertainty source in terms of an example DAS application from the intelligent vehicle systems (IVS) domain.},
+}
+
+
+
+
+
+
+@article{McKinley.FOME.JISA.2011,
+  author =       {P. K. McKinley and B. H. C. Cheng and A. J. Ramirez and A. C. Jensen},
+  title =        {Applying Evolutionary Computation To Mitigate Uncertainty 
+		in Dynamically Adaptive, High-Assurance Middleware},
+  year =         {2012},
+  volume = 	{3},	
+  number = 	{1},
+  pages = 	{51--58},
+  mynote =         {fulltext preview published online December 2011},
+  journal = 	 {Journal of Internet Services and Applications, 
+			Special Issue on The Future of Middleware},
+  URL = {http://link.springer.com/article/10.1007%2Fs13174-011-0049-4},
+  localURL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/FOME-2012.pdf},
+
+  projects =     {EvoPark, BEACON, Testbed, Sugar, Orchid, TEAMS, AWARE, Betty's grants},
+  accounts = {CNS-1059373, CNS-0915855, CNS-0751155, CCF-0541131, IIP-0700329, 
+		CCF-0750787, CCF-0820220, DBI-0939454, CNS- 0854931},
+  doi =          {10.1007/s13174-011-0049-4},
+  abstract =     {},
+}
+
+@InProceedings{Ramirez.AutoRelax.2012,
+  author =       {Andres J. Ramirez and Erik M. Fredericks and Adam C. Jensen and Betty H. C. Cheng},
+  title =        {Automatically {RELAXing} a goal model to cope with uncertainty},
+  year =         {2012},
+  booktitle =    {Proceedings of the 4th International Conference on Search Based Software Engineering},
+  pages = 	 {198--212},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/ramirez-autorelax-2012.pdf},
+  projects =     {BEACON, Testbed, Orchid, AWARE, Others},
+  doi =          {10.1007/978-3-642-33119-0_15},
+  abstract =     {},
+}
+
+@InProceedings{Ramirez.Relaxing.2012,
+  author =       {Andres J. Ramirez and Betty H. C. Cheng and Nelly Bencomo and Pete Sawyer},
+  title =        {Relaxing claims: coping with uncertainty while evaluating assumptions at run time},
+  year =         {2012},
+  booktitle =    {Proceedings of the 15th International Conference on Model Driven Engineering Languages and Systems},
+  pages = 	 {53--69},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/relaxing-models-2012.pdf},
+  projects =     {check these: BEACON, SGER, Orchid, AWARE, QFC},
+  doi =          {10.1007/978-3-642-33666-9_5},
+  abstract =     {},
+}
+
+@InProceedings{Ramirez.Loki.2011,
+  author =       {Andres J. Ramirez and Adam C. Jensen and Betty H. C. Cheng and David B. Knoester},
+  title =        {Automatically Exploring How Uncertainty Impacts the Behavior of Dynamically Adaptive Systems},
+  year =         {2011},
+  booktitle =    {Proceedings of the 26th International Conference on Automated Software Engineering {(ASE)}},
+  address =      {Lawrence, Kansas},
+  pages = 	 {568--571},
+  month =        {November},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/loki.2011.pdf},
+  projects =     {check these: BEACON, SGER, Orchid, AWARE, QFC},
+  doi =          {10.1109/ASE.2011.6100127},
+  abstract =     {A dynamically adaptive system (DAS) monitors itself and its execution environment to evaluate requirements satisfaction at run time. Unanticipated environmental conditions may produce sensory inputs that alter the self-assessment capabilities of a DAS in unpredictable and undesirable ways. Moreover, it is impossible for a human to know or enumerate all possible combinations of system and environmental conditions that a DAS may encounter throughout its lifetime. This paper introduces Loki, an approach for automatically discovering combinations of environmental conditions that produce requirements violations and latent behaviors in a DAS. By anticipating adverse environmental conditions that might arise at run time, Loki facilitates the identification of goals with inadequate obstacle mitigations or insufficient constraints to prevent such unwanted behaviors. We apply Loki to an autonomous vehicle system and describe several undesirable behaviors discovered.},
+}
+
+@InProceedings{Knoester.Manet.SASO.2011,
+  author =       {David B. Knoester and Philip K. McKinley},
+  title =        {Neuroevolution of Controllers for Self-Organizing Mobile Ad Hoc Networks},
+  booktitle =    {Proceedings of the Fifth IEEE International Conference on Self-Adaptive and Self-Organizing Systems},
+  year =         {2011},
+  address =      {Ann Arbor, Michigan},
+  month =        {October},
+  pages = 	 {188--197},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Knoester.Manet.SASO.2011.pdf},
+  projects = {BEACON,TEAMS,Orchid,Testbed,AWARE},
+  doi =          {10.1109/SASO.2011.30},
+  abstract =     {This paper describes a study in the use of neuroevolution to discover controllers for a simulated mobile ad hoc network. Neuroevolution is a technique whereby an evolutionary algorithm is used to produce artificial neural networks that solve a user-defined task. Here, we use neuroevolution to study a generic coverage-based problem, where agents in the network are to maximize the area covered by the largest connected component of the network. An example application for this work is the discovery of control algorithms for an ocean-monitoring mobile network. While this is a challenging problem domain for neuroevolution, results of our experiments reveal three important characteristics to be considered when using such an approach. Specifically, we found that approaches that implicitly reduce entropy, while explicitly addressing self-organization and scalability, are capable of discovering behaviors that remain stable even when they control networks of different sizes than were evaluated during evolution. This result suggests that neuroevolution may be a viable strategy for discovering controllers for self-organizing multi-agent systems.},
+}
+
+@InProceedings{Ramirez.Network.SASO.2011,
+  author =       {Andres J. Ramirez and Betty H. C. Cheng and Philip K. Mckinley},
+  title =        {An Evolutionary Approach to Network Self-Organization and Resilient Data Diffusion},
+  booktitle =    {Proceedings of the Fifth IEEE International Conference on Self-Adaptive and Self-Organizing Systems},
+  year =         {2011},
+  address =      {Ann Arbor, Michigan},
+  pages = 	 {198--207},
+  month =        {October},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Ramirez.Network.SASO.2011.pdf},
+  projects = {BEACON,TEAMS?,Orchid,Testbed?,SGER,AWARE},
+  doi =          {10.1109/SASO.2011.31},
+  abstract =     {Data diffusion techniques enable a distributed system to replicate and propagate data across a potentially unreliable network in order to provide better data protection and availability. This paper presents a novel evolutionary computation approach to developing network construction algorithms and data diffusion strategies. The proposed approach combines a linear genetic program with a cellular automaton to evolve digital organisms (agents) capable of self-organizing into different types of networks and self-adapting to changes in their surrounding environment, such as link failures and node churn. We assess the effectiveness of the proposed approach by conducting several experiments that explore different network structures under different environmental conditions. The results suggest the combined methods are able to produce self-organizing and self-adaptive agents that construct networks and efficiently distribute data throughout the network, while balancing competing concerns, such as minimizing energy consumption and providing reliability.},
+}
+
+@inproceedings{Athena-MODELS2011,
+title ={Automatic Derivation of Utility Functions for Monitoring Software Requirements},
+author = {Andres J. Ramirez and Betty {H. C.} Cheng}, 
+booktitle = {Proceedings of the ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS 2011)},
+address = {Wellington, New Zealand}, 
+month = {October}, 
+year = {2011},
+pages = {501--516},
+URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/automatic-derivation-2011.pdf},
+projects = {AWARE, others?},
+  doi =          {10.1007/978-3-642-24485-8_37},
+  abstract =     {},
+} 
+
+@inproceedings{FeatureInteractions-MODELS2011,
+title = {A Toolchain for the Detection of Structural and Behavioral Latent System
+Properties},
+author = {Adam Jensen and Betty {H. C.} Cheng and Heather J. Goldsby and Edward Nelson},
+booktitle = {Proceedings of the ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS 2011)},
+note = {Best Paper Nomination},
+address = {Wellington, New Zealand}, 
+month = {October}, 
+year = {2011},
+pages = {683--698},
+URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/toolchain-models-2011.pdf},
+projects = {AWARE, others?},
+  doi =          {10.1007/978-3-642-24485-8_50},
+  abstract =     {},
+}
+@inproceedings{jensen2011toolchain,
+title = {A Toolchain for the Detection of Structural and Behavioral Latent System
+Properties},
+author = {Adam Jensen and Betty {H. C.} Cheng and Heather J. Goldsby and Edward Nelson},
+booktitle = {Proceedings of the ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS 2011)},
+note = {Best Paper Nomination},
+address = {Wellington, New Zealand}, 
+month = {October}, 
+year = {2011},
+pages = {683--698},
+URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/toolchain-models-2011.pdf},
+projects = {AWARE, others?},
+  doi =          {10.1007/978-3-642-24485-8_50},
+  abstract =     {},
+}
+
+@inproceedings{Byers.Enzymes.GECCO.2011,
+  author =       {Chad M. Byers and Betty H. C. Cheng and Philip K. McKinley},
+  title =        {Digital Enzymes: Agents of Reaction Inside Robotic Controllers for the Foraging Problem},
+  booktitle =    {Proceedings of the ACM Genetic and Evolutionary Computation Conference (GECCO-2011)},
+  year =         {2011},
+  address =      {Dublin, Ireland},
+  month =        {July},
+  pages = 	 {243--250},
+  note =         {Best Paper Nomination},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Byers.Enzymes.GECCO.2011.pdf},
+  projects = {BEACON,TEAMS,Orchid,Testbed,AWARE,QFC},
+  doi =          {10.1145/2001576.2001610},
+  abstract =     {},
+}
+
+@inproceedings{Connelly.Plasmids.GECCO.2011,
+  author =       {Brian D. Connelly and Luis Zaman and Philip K. McKinley and and Charles Ofria},
+  title =        {Modeling the Evolutionary Dynamics of Plasmids in Spatial Populations},
+  booktitle =    {Proceedings of the ACM Genetic and Evolutionary Computation Conference (GECCO-2011)},
+  year =         {2011},
+  address =      {Dublin, Ireland},
+  month =        {July},
+  pages = 	 {227--233},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Connelly.Plasmids.GECCO.2011.pdf},
+  projects = {BEACON,TEAMS,Orchid,Testbed,AWARE},
+  doi =          {Leave out of AWARE},
+  abstract =     {},
+}
+
+@inproceedings{Couvertier.Biased.GECCO.2011,
+  author =       {Daniel Couvertier and Philip K. McKinley},
+  title =        {Effects of Biased Group Selection on Cooperative Predation in Digital Organisms (poster summary)},
+  booktitle =    {Proceedings of the ACM Genetic and Evolutionary Computation Conference (GECCO-2011)},
+  year =         {2011},
+  address =      {Dublin, Ireland},
+  month =        {July},
+  pages = 	 {23--24},
+  URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Couvertier.Biased.GECCO.2011.pdf},
+  projects = {BEACON,TEAMS,Orchid,Testbed,AWARE},
+  doi =          {10.1145/2001858.2001872},
+  abstract =     {},
+}
+
+@inproceedings{AO-EC-Frameworks-AOSD2011,
+title = {An Aspect-Oriented Approach for Implementing Evolutionary Computation Applications},
+author = {Andres J. Ramirez and Adam C. Jensen and Betty H. C. Cheng},
+booktitle = {Proceedings of the 10th International Conference on Aspect-Oriented Software Development (AOSD-11)},
+year = {2011},
+month = {March},
+pages = {153--164}, 
+address = {Porto de Galinhas, Pernambuco, Brazil},
+URL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/aspect-evolution-2011.pdf},
+projects = {AWARE, others?},
+  doi =          {10.1145/1960275.1960295},
+  abstract =     {},
+} 
+
+@InCollection{Sadjadi.Transparent.Chapter.2011,
+  author =       {S. M. Sadjadi and P. K. McKinley and {B. H. C. Cheng}},
+  title = {Transparent Shaping: A Methodology for Adding Adaptive Behavior to Existing Software Systems and Applications},
+  booktitle =    {Adaptive Control Approach for Software Quality Improvement},
+  editor =       {W. Eric Wong and Bojan Cukic},
+  year =         {2011},
+  pages =      {77--114},
+  publisher =  {World Scientific},
+  URL = {http://www.worldscibooks.com/compsci/8099.html},
+  localURL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Sadjadi.Transparent.Chapter.2011.pdf},
+  projects = {Meridian,RAPIDware,older grants},
+  abstract =     {},
+}
+
+
+@article{Clune.TEC.2011,
+  author =       {J. Clune and K. O. Stanley and R. T. Pennock and C. Ofria},
+  title =        {On the Performance of Indirect Encoding Across the Continuum of Regularity},
+  volume = 	 {15},
+  number = 	 {3},
+  year =         {2011},
+  pages = 	 {346--367},
+  journal = {IEEE Transactions on Evolutionary Computation},
+  URL = {http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5910671},
+  localURL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Clune.TEC.2011.pdf},
+  projects = {TEAMS,Orchid,SGER,Testbed,AWARE,BEACON,QFC},
+  doi =          {Leave out of aware},
+  abstract =     {},
+}
+
+@article{Clune.Altruism.2011,
+  author =       {Jeff Clune and Heather J. Goldsby and Charles Ofria and Robert T. Pennock},
+  title =        {Selective pressures for accurate altruism targeting: evidence 
+			from digital evolution for difficult-to-test aspects of inclusive fitness theory},
+  year =         {2011},
+  journal = {Proceedings of the Royal Society B},
+  volume = {278},
+  pages = {666--674},
+  URL = {http://rspb.royalsocietypublishing.org/content/278/1706/666.short},
+  localURL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Clune.Altruism.2010.pdf},
+  projects = {TEAMS(incorrect number),Testbed},
+  abstract =     {},
+}
+
+@article{Ramirez.Plato.Journal.2010,
+  author =       {Andres J. Ramirez and David B. Knoester and Betty H. C. Cheng and Philip K. McKinley},
+  title =        {Plato:  A Genetic Algorithm Approach to Run-Time Reconfiguration in Autonomic Computing Systems},
+  oldnote =         {published online March 5, 2010},
+  volume = 	 {14},
+  number = 	 {3},
+  journal =      {Cluster Computing},
+  pages = {229--244},
+  year = 	 {2011},
+  URL = {http://www.mitpressjournals.org/doi/abs/10.1162/artl_a_00014},
+  localURL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Ramirez.JCC.Plato.2010.pdf},
+  publisher =    {Springer},
+  projects =     {BEACON, TEAMS, Orchid, Testbed, AWARE, QFC},
+  doi =          {10.1007/s10586-010-0122-y},
+  abstract =     {},
+}
+
+@article{Knoester.Firefly.Alife.2010,
+  author =       {D. B. Knoester and Philip K. McKinley},
+  title =        {Evolution of Synchronization and Desynchronization in Digital Organisms},
+  journal =      {Artificial Life},
+  volume = 	 {17},
+  number = 	 {1},
+  pages = 	 {1--20},
+  year =         {2011},
+  URL = {http://www.mitpressjournals.org/doi/abs/10.1162/artl_a_00014},
+  localURL = {http://www.cse.msu.edu/%7emckinley/Pubs/files/Knoester.Alife.Sync.2010.pdf},
+  projects = {TEAMS,Orchid,Testbed,AWARE,QFC},
+  doi =          {already added 10.1162/artl_a_00014},
+  abstract =     {},
+}

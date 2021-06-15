@@ -1,0 +1,120 @@
+\section{Conclusions and Future Directions}
+\label{s:conclusions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Evo-ROS
+Evo-ROS is intended as a bridge between the ER and traditional robotics communities.  
+%
+Leveraging the ROS/Gazebo simulation stack, evolutionary optimization can be applied to simulated robotic systems with pre-built and tested models of commercially available hardware.  
+%
+This approach should reduce developer time requirements in building an accurate simulation, and also increase the scope of available environments/platforms for the ER community.  
+To address the execution time needed for high-fidelity simulations,
+Evo-ROS provides an interface to parallelize evolutionary runs across multiple VMs.%
+
+In a case study, we investigated optimization of sensor placement on the Erle-Rover, a commercially available UGV, equipped with with pre-built sensor libraries provided by ROS/Gazebo.  
+Evolved solutions exhibit both expected~(front facing) and unexpected~(side facing) sensor deployments.  
+%
+% However, effective solutions evolve across the three treatments.  
+%
+Resilience to damage is an important need in robotic systems, but can be challenging to design into a system.  
+%
+Even in the presence of sensor failure, evolved solutions are able to complete the waypoint following tasks.  
+%
+Evolutionary search explores the possible space and can potentially suggest novel solutions to address this issue, as observed in this study.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Evo-ROS is intended as a bridge between the ER and traditional robotics communities.  
+%
+% Leveraging the ROS/Gazebo simulation stack, evolutionary optimization can be applied to simulated robotic systems with pre-built and tested models of commercially available hardware.  
+%
+%This approach should reduce developer time requirements in building an accurate simulation, and also increase the scope of available environments/platforms for the ER community.  
+%
+%To address the execution time needed for high-fidelity simulations,
+%Evo-ROS provides an interface to parallelize evolutionary runs across multiple VMs.  
+
+While conducting the case study, we identified three areas for improvement/ongoing development.
+First the Ardupilot control software employed on the rover limits the speed of simulations to real time.  
+%
+While Ardupilot-controlled commercial platforms are readily available, this controller is
+intended primarily for the hobbyist market.  
+%
+In ongoing work, we are removing Ardupilot from the control stack of the rover, and will instead utilize a purely ROS-based controller.  
+%
+Doing so enables faster simulations and 
+should not limit the available software stacks for control and sensing, 
+as many other ROS/Gazebo software libraries are available. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Second, the use of Ardupilot and its associated MAVProxy component limited our initial experiment to a single robot per environment.
+%
+Large-scale robotics problems might involve many robots per simulation.  
+%
+%
+Our ongoing work eliminates the Ardupilot/MAVProxy dependency, allowing Evo-ROS to be used with
+simulations containing multiple robotic agents.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% McKinley: Make more clear that we are building a VM not just a virtual environment.  
+% How somebody can use it.  
+% Everything is installed and ready to go.  
+% Run as a VM on their system, or multiple instances of it.
+Finally, the ROS/Gazebo software stack can have a high initial investment in terms of start-up and configuration.  
+%
+We are currently assembling a virtual machine, preconfigured with Evo-ROS and corresponding tutorials,
+greatly reducing the time for new users to install and use Evo-ROS.
+%
+Rather than requiring individual installation of the many needed software packages, the 
+VM will contain all necessary software, ready to run.  
+%
+A user can download and deploy a VM on their own system, or distribute many instances across a computing cluster and begin parallelized runs immediately.  
+%
+By eliminating many of the time-consuming challenges we encountered in developing Evo-ROS, we hope to facilitate
+use of Evo-ROS by both the ER and mainstream robotics communities.
+
+
+% % 1) This work combines evolutionary search with control software and simulation tools widely used by the mainstream robotics community through the use of Evo-ROS.
+
+% % 2) Demonstrate the use of evolution to help design more resilient autonomous systems.
+% % 2a) Apply evolution to determine the location of sonar sensors for waypoint following and obstacle avoidance in a commercial UGV, despite random sensor failures and physical damage affecting multiple sensors.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Sensor failure and resilience
+
+
+% In this study, we investigated the optimization of sensor placement, taking
+% into account possible failures, on a commercial UGV.
+% % 5 tion of sonar sensor failure and its effect on a UGV based on the Erle-rover.  
+% %
+% Evolved solutions exhibit both expected~(front facing) and unexpected~(side facing) sensor deployments.  
+% %
+% % However, effective solutions evolve across the three treatments.  
+% %
+% Resilience to damage is an important need in robotic systems, but can be challenging to design into a system.  
+% %
+% Even in the presence of sensor failure, evolved solutions are able to complete the waypoint following tasks.  
+% %
+% Evolutionary search explores the possible space and can potentially suggest novel solutions to address this issue, as observed in this study.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Future Work
+% In ongoing work, we plan to~(1) transfer these results to our physical rover for validation,~(2) improve the efficiency of the simulation by writing a custom autopilot, and~(3) continue investigating resilience across different platforms, including commercial aerial vehicles.
+% %
+% By using Evo-ROS, specifically ROS/Gazebo, evolved results on a simulated platform should be readily transferable to a physical system, potentially helping to reduce the reality gap.  
+% %
+% % We are developing a physical Erle-rover and plan to begin testing these, and other evolved controllers, in the near future.  
+% %
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\xpkm{
+1. summarize results of the paper and contributions\\
+2. futurework : conduct experiments with real robot.
+Use evo-ros to explore resilient design and behavior in
+other platforms, such a aquatic robots and aerial drones
+(well supported by ROS, Gazebo, Ardupilot)}

@@ -1,0 +1,68 @@
+\vspace{0.2in}
+\begin{center}
+{\bf \large Description}
+\end{center}
+
+\paragraph{Motivations.} 
+Evolutionary robotics (ER)~\cite{Floreano2008} applies the basic principles of genetic evolution to the design of robots through the application of the genetic algorithm~(GA).
+%
+An artificial genome specifies the robot's control system and possibly aspects of its morphology~(body).
+%
+Individuals in a population are evaluated~(typically in simulation) with respect to one or more tasks, with the best performing individuals selected to pass their genes to the next generation.
+%
+Evolutionary approaches have yielded effective controllers and physical designs for a variety of crawling, swimming, and flying robots~\cite{bongard-lipson, Lipson2000}.  
+%
+Our own research has applied evolutionary algorithms to optimize both morphology and control
+in aquatic and terrestrial robots~\cite{Clark.JournalBB.2015,MooreALIFEJournal}.  
+%
+Evolving robot behavior and morphology is interesting in its own right, but from an
+engineering perspective, a major advantage of evolutionary search is the possible discovery of solutions (as well as potential problems) that the engineer might not otherwise have considered.
+
+Simulation is an essential component of evolutionary robotics, greatly reducing the time to evolve solutions while avoiding possible damage to physical robots.
+%
+The ER community typically creates one-off simulation environments from a few different physics 
+engines~(e.g., ODE, Bullet, VoxCAD, Simulink) to conduct an experiment.  
+%
+Environments are sparse, generally featuring the robot and possibly a few obstacles.  
+%
+Tasks typically comprise locomotion, navigation, and basic problem solving.
+%
+Robots themselves contain only a few sensors, most often developed for the specific 
+experiment being conducted.  
+%
+Hence, ER tasks are often limited by the scope of the simulation environment and how much time a developer has to code obstacles, sensors, and the platform itself.  
+%
+Models are not necessarily shareable between developers due to a lack of standardization.  
+%
+While many research questions can, and have, been answered by simple simulations, 
+it becomes difficult to address more complex questions in these environments.  
+
+In contrast, the broader robotics community can address very complex tasks; the robotic systems utilize many sensor modalities to build a coherent understanding of their environment.
+%
+By providing tested models of commercially available hardware, ROS/Gazebo provides a platform to study high-level behaviors while saving developer time during the design phase.  
+%
+Additionally, results have been shown to transfer to real robots, potentially addressing the ``reality-gap'' often encountered in ER~\cite{Koos2010}.  
+
+In the {\project} project, we have developed an evolutionary framework that integrates ROS-based simulations for robot evaluation.  
+%
+Our current prototype includes ROS, Gazebo, Ardupilot and MAVROS.    
+%
+The primary goals of the project are twofold. 
+%
+First, the framework enables researchers in ER to take advantage ROS and related simulation tools.
+%
+Second, it enables robot developers to employ evolutionary search during the design process.
+
+%\pkm{Further discuss/expand on advantages: very active community, lots of new
+%features/capabilities being developed, works with Gazebo (and other physics-based simulators)
+%providing support for many types of sensors/actuators, code can be directly ported
+%to physical robot, Reality gap is a huge issue in ER.}
+%
+%\pkm{Mention somewhere ``as evidenced by the enormous success of ROSCon and
+%large developer community.'' (?)}
+%
+%\pkm{better wording?}
+%\pkm{Briefly describe current status, esp. that we have a version that integrates ROS/Gazebo
+%as well as Ardupilot, MAVProxy and Erle-Rover, as well as different ROS/Gazebo/VM configurations.}
+%\pkm{Probably mention Github repositories here as well, preliminary with more to come.}
+

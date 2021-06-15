@@ -1,0 +1,15 @@
+\paragraph{Implementation.}
+The {\project} framework separates the GA and simulation through a socket-based interface.  
+%
+Messages are sent from the GA to ROS/Gazebo instances, where the robot is evaluated.  
+%
+A fitness score is then returned through another socket back to the GA, where the generational loop is processed.  
+%
+In comparison to a typical ROS/Gazebo simulation, the primary extension a user needs to implement is mapping a genome into the robotic system.  
+%
+In our sample code, we show how to implement this approach for a simple Roomba-like robotic system as well as the more complex Erle-Rover robot.  
+
+To address performance concerns, {\project} can exploit multiple levels of parallelism, including: 
+deploying to (1) several physical machines; (2) several VMs on the same physical machine; (3) multiple ROS instances in the same VM; (4) multiple Gazebo simulations per ROS master; and (5) multiple, separate evaluations per Gazebo simulation (e.g., two robots completing tasks in separate zones--not interacting).  
+%
+The current Github repositories contain implementations of (2) with an Ardupilot based controller and (4) with a state machine based controller.

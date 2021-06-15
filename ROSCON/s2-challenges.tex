@@ -1,0 +1,29 @@
+\paragraph{Challenges.}
+Our basic approach is to configure a GA (or other evolutionary algorithm) as a front-end, handling the details of genomes, populations, and selection, with ROS-based simulations invoked to evaluate individual robots (or possibly groups of collaborating robots).  
+%
+Although this task might appear straightforward, we have encountered some key challenges.
+
+%\textit{Simulation Efficiency.}
+First, individual simulations in ROS/Gazebo often require substantially more wall-clock time than those of typical ER  simulators.  
+%
+With the addition of plugins such as MAVProxy in the Ardupilot stack, this constraint can further slow simulations, minimizing the gain of using simulation versus physical robots.
+%
+Considering the distributed nature of ROS, and the overhead of multiple plugins/nodes running concurrently, this performance is not surprising.  
+%
+Fortunately, evaluations are ``pleasantly parallel'' and can often be 
+distributed across computing resources to speed up the execution time for each generation.  
+%
+Depending on the specific plugin stack required, one ROS instance can spawn 
+multiple Gazebo instances, or single ROS/Gazebo pairs can be distributed across multiple virtual machines~(VMs).  
+%
+We have tested both approaches and have sample implementations available~(see the end of this document for Github links).
+
+Another issue in ROS/Gazebo, which we have only partially addressed, is determinism.  
+%
+Given an identical random seed, most ER researchers would expect to be able to reproduce simulation results exactly.
+%
+Admittedly, ROS was not necessarily intended for this type of application, and after all the real world is not deterministic.
+%
+So far, we have been able to reduce the disparity among results of identical evaluations by employing smaller time steps or throttling the update rate of the ROS clock.  
+%
+We plan to continue investigating this issue moving forward.
